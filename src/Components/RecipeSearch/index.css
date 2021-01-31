@@ -1,0 +1,173 @@
+
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+
+
+
+.Search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.search-form {
+  width: 60rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:none;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+  position: absolute;
+  top: 60%;
+  outline: none;
+}
+
+.alert {
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  background-color: rgb(233, 72, 72);
+  width: calc(100% - 0.4rem);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  outline: none;
+}
+
+.alert h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+}
+
+.search-form input {
+  font-size: 1.6rem;
+  border: none;
+  border-bottom: 0.1rem solid #ccc;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  height: 3rem;
+  outline: none;
+}
+
+.search-form input[type="text"] {
+  padding: 0 0.5rem;
+  width: 60%;
+  color: #555;
+  outline: none;
+}
+
+.search-form input[type="submit"] {
+  width: 25%;
+  text-transform: uppercase;
+  background-color: lightgray;
+  color: #fff;
+  outline: none;
+}
+
+.recipes {
+  width: 2000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 80%;
+  background-color: none;
+  outline: none;
+  height: 2000px;
+  overflow: scroll
+
+ 
+}
+
+@media only screen and (max-width: 1800px) {
+  .recipes {
+    width: 1500px
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .recipes {
+    width: 1000px
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .recipes {
+    width: 500px
+  }
+}
+
+.recipe {
+  width: 20rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction:column;
+  background-color: none;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  outline: none;
+
+}
+
+.recipe h2 {
+  background-color: rgba(161, 161, 161, 0.7);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-shadow: 0 0.5rem 0.5rem #555;
+  color: #fff;
+  outline: none;
+}
+
+.recipe img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+  outline: none;
+}
+
+.recipe a {
+  font-size: 1.3rem;
+  color: #40b48e;
+  outline: none;
+}
+
+
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+.ingredient-text {
+  font-size: 1.5rem;
+  color: #888;
+  outline: none;
+}
+
+.ingredient-weight {
+  color: #336600;
+  font-size: 1.3rem;
+  outline: none;
+}
