@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormHelperText from "@material-ui/core/FormHelperText";
 import Switch from "@material-ui/core/Switch";
+import ContentContext from "../../../ContentContext";
 
 const cuisineStyles = makeStyles(() => ({
   form: {
@@ -50,8 +51,15 @@ export default function CuisineForm() {
     spanish: false,
   });
 
+  const {data, setData } = useContext(ContentContext)
+
   const handleChange = (event) => {
     setState({ ...state, [event.target.name]: event.target.checked });
+    setData({
+      cuisine: event.target.name
+    })
+    console.log(data)
+    
   };
 
   return (
